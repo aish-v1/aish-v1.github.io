@@ -1,0 +1,49 @@
+
+        .q
+        {
+            text-align: left;
+            color: black;
+            font-weight: 600;
+            font-size: 14;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .ans
+        {
+            visibility: hidden;
+            color: rebeccapurple;
+            font-size:14;
+            font-style:italic;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+         #q1:hover ~ #ans1{
+             visibility: visible;
+         }   
+         #q2:hover ~ #ans2{
+            visibility: visible;
+         }   
+        
+         #q3:hover ~ #ans3{
+             visibility: visible;
+         }    
+         #q4:hover ~ #ans4{
+             visibility: visible;
+         }    
+         #q5:hover ~ #ans5{
+             visibility: visible;
+         }   
+          #q6:hover ~ #ans6{
+             visibility: visible;
+         } 
+         .avc
+         {
+            text-align:center;
+            border-radius: 25px;
+            width:70%;height:80%;
+            background: linear-gradient(to bottom, #fff 0%, rgba(132, 114, 182, 0.555) 100%);
+            margin-top: auto; padding:20px;
+         }
+        #b
+        {
+            background-color: rebeccapurple;
+        }

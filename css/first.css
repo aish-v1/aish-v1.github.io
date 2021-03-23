@@ -1,0 +1,118 @@
+body{
+    background-image: url(https://ideasphere.com/wp-content/uploads/2016/08/Savin-NY-Website-Background-Web-1-1024x576.jpg);
+    background-size: cover;
+    margin:8px;
+}
+.header 
+{
+    text-align:center;
+    font-size: 24;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom:10px;
+    color:black;
+}
+.iframe_a
+{
+    border:none;
+    margin: 0 auto;
+    display:flex;
+    justify-content:center;
+}
+.footer
+{
+    margin-top:200px;
+    position: relative;
+}
+.fp
+{
+    text-align:center;
+    font-size: 10;
+    color:black;
+}
+.fan
+{
+    text-align:center;
+    font-size: 10;
+    color:black;
+}
+nav
+{
+    
+     display: flex;
+     justify-content: center;
+}
+ nav a.a{
+     display:block;
+     float:left;
+     width: 120px;
+     height:25px ;
+     padding: 8px;
+     background-color: rgb(248, 248, 248);
+     text-decoration:none;
+     
+ }
+ .p{
+     margin-top: 3px;
+     text-align: center;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     color:black;
+     font-size:14;
+ }
+ nav a.a:hover
+ {
+     background-color: chartreuse;
+ }
+ .logo
+ {
+     height:35px;
+     width:35px;
+ }
+
+@media only screen and (max-width: 767px)
+{
+    .header{font-size:20;}
+    nav a.a{
+        
+        width: 60px;
+        height:12.5px;
+        padding: 4px;
+        
+        
+    }
+    .p{
+        margin-top: 1.5px;
+        font-size:10;
+    }
+    .logo
+    {
+        height:17.5px;
+        width:17.5px;
+    }
+    .footer{
+        visibility:hidden;
+    }
+}
+@media only screen and (max-width: 480px)
+{
+    .header{font-size:14;}
+    nav a.a{
+        
+        width: 30px;
+        height: 6px;
+        padding: 2px;
+        
+        
+    }
+    .p{
+        margin-top: 0.5px;
+        font-size:6;
+    }
+    .logo
+    {
+        height:8.75px;
+        width:8.75px;
+    }
+    .footer{
+        visibility:hidden;
+    }
+}

@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>register</title>
+<link rel="stylesheet" href="css/register.css">
+<link rel="stylesheet" href="css/first.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="icon" type="image/ico" href="images/logo.jpg" />
+</head>
+<body>
+    <header><p class="header">Travelopedia<img class="logo" src="images/icon.png"></p></header>
+        <nav>
+        <a class="a" href="home.html"><p class="p">Home</p></a> 
+        <a class="a" id="b" href="register.html"><p class="p">Register</p></a> 
+        <a class="a" href="packages.html" ><p class="p">Packages</p></a> 
+        <a class="a" href="about.html"><p class="p">About us</p></a> 
+        <a class="a" href="faq.html"><p class="p">FAQs</p></a>
+        </nav><br><br><br>
+    <div class="iframe_a" id="div">
+    <form class="form" id="form_data" align="left" method="POST">
+    <label class="label" for="Name:" >Name:</label><br>
+    <input type="text" name="name" id="Name:" placeholder="enter your name"/><br>
+    <label class="label" for="age" >Age:</label><br><input type="number" name="name" id="age" placeholder="enter your age"/><br>
+    <label class="label" for="email">Email:</label><br><input type="email" name="email" id="email" placeholder="enter your email" required/><br>
+    <label class="label" for="password">Password:</label><br><input type="password" name="password" id="password" placeholder="enter your password"/><br>
+    <label id="req" class="label" for="dob">DOB:</label><br><input type="date" id="dob" name="dob"/><br>
+    <label class="label" for="no">Phone No:</label><br><input type="text" name="phone no" id="no" placeholder="enter your contact" required/><br>
+    <input type="radio" id="gender" name="gender"/><label for="gender" class="label">Male</label><input type="radio" id="gender1" name="gender" /><label for="gender1" class="label">Female</label><br><br>
+    <input class="s" type="submit" value="Submit"/>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input class="s" type="reset" value="Reset"/>
+</form>
+
+</div>
+<a class="signin" href="signin.html" target="frame"><p>Already registered?Click here to sign in!</p></a>
+<iframe class="frame" height="70%" width="80%" name="frame"></iframe>
+<footer class="footer">
+        <p class="fp">created by Aishwarya</p>
+        <a class="fan" href="#"><p>CONTACT US</p></a>
+    </footer>
+<script>
+$('#no').keypress(validateMaxLength);
+
+function validateMaxLength()
+{
+        var text = $(this).val();
+        var maxlength=text.length;
+        if(maxlength > 9)  
+        {
+           alert("10 digits allowed for phone number!!");
+        }
+}
+
+
+var formData = JSON.stringify($("#form_data ").serializeArray());
+
+
+
+
+
+</script>
+</body>
+</html>
